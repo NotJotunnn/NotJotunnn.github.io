@@ -108,7 +108,7 @@
 
 @media (max-width: 800px) {
     .about {
-        height: 120vh;
+        height: 800px;
     }
     
     .about-content .col1 {
@@ -122,6 +122,10 @@
         align-items: center;
 
         text-align: center;
+    }
+
+    .about-content .col2 img {
+        outline: none;
     }
 
     .about-content .col2 p {

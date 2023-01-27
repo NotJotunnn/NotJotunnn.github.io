@@ -108,7 +108,7 @@
 
 @media (max-width: 800px) {
     .hero {
-        height: 70vh;
+        height: 400px;
     }
 
     .hero-content {

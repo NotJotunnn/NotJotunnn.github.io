@@ -208,7 +208,7 @@
 
 @media (max-width: 800px) {
     .project {
-        height: 140vh;
+        height: 1000px;
     }
 
     .project-content .gallery {
