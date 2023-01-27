@@ -137,6 +137,10 @@ header {
         transition: rotate 400ms;
     }
 
+    .header-content nav > a button {
+        outline: none;
+    }
+
     @media (hover:hover) {
         .header-content .menu:hover i, .header-content .menu:focus-within i {
             color: var(--accent);

@@ -117,4 +117,8 @@
     .contact-content hr {
         display: none;
     }
+
+    .contact-content .fields input {
+        border-radius: none;
+    }
 }
