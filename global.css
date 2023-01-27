@@ -1,0 +1,50 @@
+@import "./styles/header.css";
+@import "./styles/hero.css";
+@import "./styles/about.css";
+@import "./styles/project.css";
+@import "./styles/contact.css";
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --debugger: 2px solid red;
+
+    --width: clamp(580px, 80%, 1100px);
+
+    --accent: #5e2993;
+
+    --transparent-background: #1c1c1cd3;
+
+    --background: #1c1c1c;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+
+    overflow-x: hidden;
+
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .mobile-only {
+        display: block;
+    }
+}

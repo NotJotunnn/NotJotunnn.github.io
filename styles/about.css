@@ -1,0 +1,137 @@
+.about {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60vh;
+
+    background-color: var(--background);
+}
+
+.about-content {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    width: var(--width);
+    height: 100%;
+
+    gap: 80px;
+}
+
+.about-content .col1 .img-background {
+    background-color: var(--accent);
+
+    border-left: 4px solid var(--accent);
+    border-top: 4px solid var(--accent);
+
+    width: 100%;
+    height: 100%;
+}
+
+.about-content .col1 img {
+    width: 100%;
+    height: 100%;
+
+    border: 4px solid black;
+
+    position: relative;
+
+    top: 10px;
+    left: 10px;
+}
+
+.about-content .col2 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    color: aliceblue;
+}
+
+.about-content .col2 img {
+    border-radius: 50%;
+
+    border: 3px solid transparent;
+    outline: 4px solid var(--accent);
+
+    box-shadow: 10px 10px 10px black;
+
+    width: 50%;
+}
+
+.about-content .col2 h2 {
+    font-size: 32px;
+}
+
+.about-content .col2 hr {
+    width: 50px;
+    height: 5px;
+
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+
+    border-radius: 4px;
+}
+
+.about-content .button-group {
+    display: flex;
+
+    width: 100%;
+
+    gap: 15px;
+}
+
+.about-content .button-group button {
+    padding: 10px 20px;
+
+    width: 200px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+
+.about-content button:hover, .about-content button:focus-within {
+    background-color: var(--accent);
+    color: aliceblue;
+
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .about {
+        height: 120vh;
+    }
+    
+    .about-content .col1 {
+        display: none;
+    }
+
+    .about-content .col2 {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .about-content .col2 p {
+        width: 250px;
+    }
+
+    .about-content .button-group {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+}

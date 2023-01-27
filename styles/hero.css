@@ -1,0 +1,142 @@
+.hero {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60vh;
+
+    overflow-x: hidden;
+
+    background: url('../assets/projects/ilya-pavlov-unsplash-hero-background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hero-background {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--transparent-background);
+
+    z-index: 0;
+}
+
+.hero-content {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    width: var(--width);
+
+    gap: 15px;
+
+    z-index: 1;
+}
+
+.hero-content .col1 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.hero-content .col1 h1 {
+    font-size: 32px;
+
+    color: aliceblue;
+}
+
+.hero-content .name {
+    color: var(--accent);
+
+    font-size: 54px;
+}
+
+.hero-content .button-group {
+    display: flex;
+
+    width: 100%;
+
+    gap: 15px;
+}
+
+.hero-content .button-group button {
+    padding: 10px 20px;
+
+    width: 200px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+
+.hero-content button:hover, .hero-content button:focus-within {
+    background-color: var(--accent);
+    color: aliceblue;
+
+    cursor: pointer;
+}
+
+.hero-content .col2 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content .col2 img {
+    border-radius: 50%;
+
+    border: 3px solid transparent;
+    outline: 4px solid var(--accent);
+
+    box-shadow: 10px 10px 10px black;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content {
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+    }
+
+    .hero-content .col2 {
+        display: none;
+    }
+
+    .hero-content .col1 {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero-content .button-group {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+}
