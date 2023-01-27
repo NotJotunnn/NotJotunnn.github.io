@@ -83,13 +83,6 @@
     font-size: 16px;
 }
 
-.hero-content button:hover, .hero-content button:focus-within {
-    background-color: var(--accent);
-    color: aliceblue;
-
-    cursor: pointer;
-}
-
 .hero-content .col2 {
     display: flex;
 
@@ -104,6 +97,15 @@
     outline: 4px solid var(--accent);
 
     box-shadow: 10px 10px 10px black;
+}
+
+@media (hover:hover) {   
+    .hero-content button:hover, .hero-content button:focus-within {
+        background-color: var(--accent);
+        color: aliceblue;
+
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 800px) {

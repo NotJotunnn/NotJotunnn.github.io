@@ -51,15 +51,6 @@ header {
     color: aliceblue;
 }
 
-.header-content li:focus-within, .header-content li:hover {
-    text-decoration: underline;
-    color: var(--accent);
-}
-
-.header-content li:focus-within a, .header-content li:hover a {
-    color: var(--accent);
-}
-
 .header-content nav > a button {
     background-color: var(--accent);
 
@@ -69,20 +60,31 @@ header {
     border-radius: 20px;
 }
 
-.header-content nav > a button:hover, .header-content nav > a button:focus-within {
-    background-color: var(--background);
-
-    cursor: pointer;
-}
-
 .header-content nav > a button > i {
     font-size: 24px;
 
     color: var(--background);
 }
 
-.header-content nav > a button:hover i, .header-content nav > a button:focus-within i {
-    color: var(--accent);
+@media (hover:hover) {
+    .header-content li:focus-within, .header-content li:hover {
+        text-decoration: underline;
+        color: var(--accent);
+    }
+
+    .header-content li:focus-within a, .header-content li:hover a {
+        color: var(--accent);
+    }
+
+    .header-content nav > a button:hover, .header-content nav > a button:focus-within {
+        background-color: var(--background);
+    
+        cursor: pointer;
+    }
+
+    .header-content nav > a button:hover i, .header-content nav > a button:focus-within i {
+        color: var(--accent);
+    }
 }
 
 @media (max-width: 800px) {
@@ -135,11 +137,13 @@ header {
         transition: rotate 400ms;
     }
 
-    .header-content .menu:hover i, .header-content .menu:focus-within i {
-        color: var(--accent);
-        rotate: -90deg;
-
-        cursor: pointer;
+    @media (hover:hover) {
+        .header-content .menu:hover i, .header-content .menu:focus-within i {
+            color: var(--accent);
+            rotate: -90deg;
+    
+            cursor: pointer;
+        }
     }
 
     .non-visible {

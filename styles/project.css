@@ -66,14 +66,6 @@
     overflow: hidden;
 }
 
-.project-content .card:hover .background, .project-content .card:focus-within .background {
-    opacity: 1;
-}
-
-.project-content .card:hover .card-description, .project-content .card:focus-within .card-description {
-    translate: 0 0;
-}
-
 .project-content .card .background {
     position: absolute;
 
@@ -89,7 +81,7 @@
 
     z-index: -1;
 
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.091), var(--accent));
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.314), var(--accent));
 
     transition: opacity 600ms;
 }
@@ -135,16 +127,6 @@
     background-color: white;
 }
 
-.project-content .card .card-description button:hover, .project-content .card .card-description button:focus-within {
-    background-color: black;
-
-    cursor: pointer;
-}
-
-.project-content .card .card-description button:hover i, .project-content .card .card-description button:focus-within i {
-    color: aliceblue;
-}
-
 .project-content .card .card-description button i {
     color: black;
     
@@ -166,11 +148,8 @@
     outline: none;
 
     font-size: 18px;
-}
 
-.project-content > a button:hover, .project-content > a button:focus-within {
-    background-color: var(--accent);
-    color: aliceblue;
+    margin-top: 20px;
 }
 
 .project-content > a button i {
@@ -187,11 +166,6 @@
     height: 24px;
 }
 
-.project-content > a button:hover i, .project-content > a button:focus-within i {
-    background-color: var(--background);
-    color: aliceblue;
-}
-
 .project-content .card .base {
     display: flex;
 
@@ -204,6 +178,54 @@
     height: 350px;
 
     font-size: 34px;
+}
+
+@media (hover:hover) {
+    .project-content .card:hover .background, 
+    .project-content .card:focus-within .background {
+        opacity: 1;
+    }
+    
+    .project-content .card:hover .card-description, 
+    .project-content .card:focus-within .card-description {
+        translate: 0 0;
+    }
+
+    .project-content .card .card-description button:hover, 
+    .project-content .card .card-description button:focus-within {
+        background-color: black;
+    
+        cursor: pointer;
+    }
+
+    .project-content .card .card-description button:hover i, 
+    .project-content .card .card-description button:focus-within i {
+        color: aliceblue;
+    }
+
+    .project-content > a button:hover, 
+    .project-content > a button:focus-within {
+        background-color: var(--accent);
+        color: aliceblue;
+    }
+    .project-content > a button:hover i, .project-content > a button:focus-within i {
+        background-color: var(--background);
+        color: aliceblue;
+    }
+}
+
+@media (hover:none) {
+    .project-content .card .background, 
+    .project-content .card .background {
+        opacity: 1;
+    }
+
+    .project-content .card .card-description, 
+    .project-content .card .card-description {
+        translate: 0 0;
+
+        padding: 10px;
+    }
 }
 
 @media (max-width: 800px) {

@@ -22,6 +22,12 @@
     height: 100%;
 }
 
+.contact-content h2 {
+    color: aliceblue;
+
+    text-align: center;
+}
+
 .contact-content hr {
     height: 80px;
     width: 5px;
@@ -72,11 +78,6 @@
     padding-left: 10px;
 }
 
-.contact-content .fields input:focus {
-    background-color: var(--background);
-    color: aliceblue;
-}
-
 .contact-content form button {
     border: none;
 
@@ -87,14 +88,22 @@
     padding-right: 10px;
 }
 
-.contact-content form button:hover, .contact-content form button:focus {
-    background-color: rgb(160, 0, 160);
-    color: aliceblue;
+@media (hover:hover) {
+    .contact-content .fields input:focus {
+        background-color: var(--background);
+        color: aliceblue;
+    }
 
-    outline: none;
+    .contact-content form button:hover, .contact-content form button:focus {
+        background-color: rgb(160, 0, 160);
+        color: aliceblue;
+    
+        outline: none;
+    
+        cursor: pointer;
+    }
 
-    cursor: pointer;
-} 
+}
 
 @media (max-width: 800px) {
     .contact {

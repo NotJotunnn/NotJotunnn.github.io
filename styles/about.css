@@ -99,11 +99,13 @@
     font-size: 16px;
 }
 
-.about-content button:hover, .about-content button:focus-within {
-    background-color: var(--accent);
-    color: aliceblue;
-
-    cursor: pointer;
+@media (hover:hover) {
+    .about-content button:hover, .about-content button:focus-within {
+        background-color: var(--accent);
+        color: aliceblue;
+    
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 800px) {
