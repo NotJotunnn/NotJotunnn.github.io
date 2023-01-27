@@ -56,7 +56,10 @@
     width: 100%;
     height: 50px;
 
-    border: none;
+    border-bottom: 2px solid grey;
+    border-right: none;
+    border-top: none;
+    border-left: none;
     outline: none;
     
     box-shadow: none;
@@ -120,5 +123,18 @@
 
     .contact-content .fields input {
         border-radius: none;
+    }
+
+    .contact-content .fields input:nth-child(1) {
+        border-top-left-radius: 0px;
+    }
+
+    .contact-content .fields input:nth-child(2) {
+        border-bottom-left-radius: 0px;
+    }
+
+    .contact-content form button {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }
