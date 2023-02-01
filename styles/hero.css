@@ -13,6 +13,8 @@
 
     background: url('../assets/projects/ilya-pavlov-unsplash-hero-background.jpg') no-repeat center;
     background-size: cover;
+
+    overflow: hidden;
 }
 
 .hero-background {
