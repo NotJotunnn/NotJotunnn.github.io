@@ -59,9 +59,14 @@
 }
 
 .hero-content .name {
-    color: var(--accent);
+    color: black;
 
     font-size: 54px;
+
+    text-shadow: 2px 0px 1px var(--accent), 0px 2px 1px var(--accent), 
+    -2px 0px 1px var(--accent), 0px -2px 1px var(--accent),
+    2px 2px 1px var(--accent), -2px -2px 1px var(--accent), 
+    2px -2px 1px var(--accent), -2px 2px 1px var(--accent);
 }
 
 .hero-content .button-group {
