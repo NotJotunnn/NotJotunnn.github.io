@@ -7,7 +7,6 @@
 
 body {
     display: flex;
-    flex-direction: column;
 
     justify-content: center;
     align-items: center;
@@ -15,42 +14,293 @@ body {
     width: 100%;
     height: 100vh;
 
-    background-color: black;
-
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
 }
 
-h1 {
-    font-size: 72px;
+.card-group {
+    display: grid;
 
-    text-shadow: 2px 0px 1px purple, 0px 2px 1px purple, 
-    -2px 0px 1px purple, 0px -2px 1px purple,
-    2px 2px 1px purple, -2px -2px 1px purple, 
-    2px -2px 1px purple, -2px 2px 1px purple;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 200px);
 
-    user-select: none;
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+
+    gap: 15px;
+
+    overflow: hidden;
 }
 
-a {
+.card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 110%;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), black);
+    
+    z-index: 1;
+
+    transition: translate 400ms 400ms;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    color: white;
+
+    z-index: 2;
+
+    transition: translate 400ms 400ms;
+}
+
+.card-content h2 {
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.496);
+
+    padding: 0px 10px;
+}
+
+.card-content .card-box {
+    width: 30px;
+    height: 10px;
+
+    background-color: yellowgreen;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    transition: width 400ms
+}
+
+.card-content p {
+    padding: 0px 15px;
+}
+
+.card-content button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 32px;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.card-buttons-group {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.card-content a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
     text-decoration: none;
-
-    font-size: 72px;
-
     color: black;
 
-    text-shadow: 2px 0px 1px purple, 0px 2px 1px purple, 
-    -2px 0px 1px purple, 0px -2px 1px purple,
-    2px 2px 1px purple, -2px -2px 1px purple, 
-    2px -2px 1px purple, -2px 2px 1px purple;
+    border-radius: 4px;
 
-    transition: text-shadow 400ms, color 400ms;
+    background-color: white;
 }
 
-a:hover, a:focus-within {
-    text-shadow: 0px 0px 0px purple, 0px 0px 0px purple, 
-    0px 0px 0px purple, 0px 0px 0px purple,
-    0px 0px 0px purple, 0px 0px 0px purple, 
-    0px 0px 0px purple, 0px 0px 0px purple;
+.size-1 {
+    width: 150px;
+    height: 200px;
 
-    color: purple;
+    background-image: url('https://picsum.photos/150/200');
+}
+
+.size-1 .card-content {
+    translate: 0px 125px;
+}
+
+.size-1 p {
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 4;
+
+    overflow: hidden;
+}
+
+.size-1 .card-background {
+    translate: 0px 110px;
+}
+
+.size-2 {
+    width: 300px;
+    height: 200px;
+
+    background-image: url('https://picsum.photos/300/200');
+
+    grid-column: span 2;
+}
+
+.size-2 .card-content {
+    translate: 0px 110px;
+}
+
+.size-2 .card-background {
+    translate: 0px 110px;
+}
+
+.size-2 p {
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+
+    padding: 0px 10px;
+
+    transition: -webkit-line-clamp 400ms 400ms;
+}
+
+.size-3 {
+    width: 300px;
+    height: 400px;
+
+    background-image: url('https://picsum.photos/300/400');
+
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.size-3 .card-content {
+    translate: 0px 210px;
+}
+
+.size-3 .card-background {
+    translate: 0px 110px;
+}
+
+.size-3 p {
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+
+    padding: 0px 10px;
+
+    transition: -webkit-line-clamp 400ms 400ms;
+}
+
+@media (hover: hover) {
+    .card-content button:hover, .card-content button:focus-within {
+        background-color: black;
+        color: white;
+    }
+
+    .card:hover .card-content, .card:focus-within .card-content {
+        translate: 0px 0px;
+    }
+
+    .card:hover .card-background, .card:focus-within .card-background {
+        translate: 0px -15px;
+    }
+
+    .card:hover .card-content .card-box, .card:focus-within .card-content .card-box {
+        width: 80%;
+    }
+
+    .size-2:hover p, .size-2:focus-within p {
+        -webkit-line-clamp: 4;
+    }
+
+    .size-3:hover p, .size-3:focus-within p {
+        -webkit-line-clamp: 14;
+    }
+}
+
+@media (max-width: 800px) {
+    body, .card-group {
+        height: 100%;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 0px;
+    }
+
+    .mobile {
+        width: 300px;
+        height: 200px;
+
+        background-image: url('https://picsum.photos/300/200');
+    }
+
+    .mobile p {
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+
+        -webkit-line-clamp: 2;
+
+        overflow: hidden;
+    }
+
+    .card .card-content, .card .card-content {
+        translate: 0px 0px;
+    }
+
+    .card .card-background, .card .card-background {
+        translate: 0px -15px;
+    }
+
+    .card .card-content .card-box, .card .card-content .card-box {
+        width: 80%;
+    }
 }
