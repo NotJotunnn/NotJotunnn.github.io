@@ -9,7 +9,7 @@ const projectList = [
         name: 'Teclado Electron',
         desc: `Este é o Teclado Electron! (rsrsrs)<br><br>Feito por mim para me divertir com meus amigos e me desafiar!`,
         github: 'https://github.com/NotJotunnn/electron_keyboard',
-        bgimg: 'medkeyboard.png',
+        bgimg: 'keyboard.png',
         size: 2
     },
     {
@@ -58,7 +58,7 @@ const projectList = [
         name: 'Lista de afazeres! (webapp)',
         desc: `Este foi um dos primeiros aplicativos de web feitos por mim!<br><br>Este utiliza uma API local rudimentar para inserir novos dados à lista, ou remover antigos! E também tem um nome chato de se escrever!`,
         github: 'https://github.com/NotJotunnn/Task-list',
-        bgimg: 'medtask.png',
+        bgimg: 'task.png',
         size: 2
     }
 ]

@@ -6,7 +6,7 @@
     align-items: center;
 
     width: 100%;
-    height: max(80vh, 1100px);
+    height: max(80vh, 1200px);
 
     background-color: aliceblue;
 }
@@ -43,6 +43,9 @@
 .card-group {
     display: grid;
 
+    width: 1080px;
+    height: 900px;
+
     grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(4, 200px);
 
@@ -69,6 +72,8 @@
     background-color: #fff;
 
     border-radius: 20px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.678);
 
     overflow: hidden;
 }
