@@ -161,21 +161,23 @@ header {
         transition: rotate 400ms;
     }
 
-    body > .nav > a button {
+    body > .nav a[target="_blank"] * {
         outline: none;
+    }
+
+    body > .nav a button {
+        background-color: var(--accent);
+
+        width: 26px;
+        height: 26px;
+
+        border: 2px solid var(--accent);
+
+        border-radius: 20px;
     }
     
     body > .nav li, body > .nav a {
         color: aliceblue;
-    }
-    
-    body > .nav > a button {
-        background-color: var(--accent);
-    
-        border: none;
-        outline: 3px solid var(--accent);
-    
-        border-radius: 20px;
     }
     
     body > .nav > a button > i {
