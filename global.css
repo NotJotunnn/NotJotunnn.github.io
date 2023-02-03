@@ -4,6 +4,8 @@
 @import "./styles/project.css";
 @import "./styles/contact.css";
 
+@import "./styles/modal.css";
+
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +20,7 @@
 
     --width: clamp(580px, 80%, 1100px);
 
-    --accent: #5e2993;
+    --accent: #853ad0;
 
     --transparent-background: #1c1c1cd3;
 
@@ -43,8 +45,20 @@ a * {
     color: var(--background);
 }
 
+.highlight {
+    color: var(--accent);
+}
+
+.italic {
+    font-style: italic;
+}
+
 .mobile-only {
     display: none;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
 
 @media (max-width: 800px) {

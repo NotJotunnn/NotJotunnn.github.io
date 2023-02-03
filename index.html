@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="no-scroll">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,16 +28,16 @@
                 <path d="M437.399 121.99L445.649 114.629V129.351L437.399 121.99Z" />
             </svg>
 
-            <nav id="navigation" class="non-visible">
+            <nav class="non-visible">
                 <ul>
-                    <li id="navAbout"><a href="#about">Sobre mim</a></li>
-                    <li id="navProject"><a href="#project">Projetos</a></li>
-                    <li id="navContact"><a href="#contact">Contato</a></li>
+                    <li onclick="checkMenu()"><a href="#about">Sobre mim</a></li>
+                    <li onclick="checkMenu()"><a href="#project">Projetos</a></li>
+                    <li onclick="checkMenu()"><a href="#contact">Contato</a></li>
                 </ul>
                 <a target="_blank" href="https://github.com/NotJotunnn"><button><i class="fa-brands fa-github"></i></button></a>
             </nav>
 
-            <button id="menuBtn" class="menu mobile-only">
+            <button onclick="menuToggle()" class="menu mobile-only">
                 <i class="fa-sharp fa-solid fa-bars"></i>
             </button>
         </div>
@@ -47,7 +47,7 @@
         <div class="hero-background"></div>
         <div class="hero-content">
             <div class="col1">
-                <h1>Olá! me chamo: <br><span class="name">Leandro Ferreira.</span><br>Sou um frontend developer!</h1>
+                <h1>Olá! me chamo: <br><span class="name">Leandro Ferreira.</span><br>E sou um frontend developer!</h1>
 
                 <div class="button-group">
                     <a href="#contact"><button>Entrar em contato</button></a>
@@ -73,9 +73,15 @@
                 <img class="mobile-only" src="./assets/me.jpg" alt="Foto minha!">
                 <h2>Sobre mim</h2>
                 <hr>
-                <p>Olá! Muito prazer! Me chamo Leandro Ferreira.</p>
-                <p>Desde criança, sempre tive muita curiosidade sobre o mundo tecnológico, e hoje tenho o prazer de estar estudando mais sobre!</p>
-                <p id="status">Atualmente estou cursando o 7º semestre de ciências da computação</p>
+                <h3>👋 Olá! Me chamo Leandro!</h3>
+
+                <p>Desde de meu <span class="highlight">ensino médio</span>, sempre tive muita conexão com a área de programação, seja conhecendo pessoas que praticavam ou consumindo diversos conteúdos do gênero, e hoje eu estou à procura de torna-lo <span class="highlight">real</span> passo a passo.</p>
+
+                <p>Estou <span class="highlight">atualmente</span> estudando a área de <span class="highlight">ciências da computação</span> e <span class="highlight">Frontend development</span>.</p>
+                    
+                <p>Como ferramentas de meu estudo possuo meu GitHub para armazenar os diversos modelos desenvolvidos por mim, <span class="highlight">HTML e CSS</span> para estruturar componentes e estiliza-los, e dependendo da ocasião, <span class="highlight">Javascript</span> para melhor desenvolver o <span class="highlight">Backend</span> de qualquer projeto. Além dessas, também utilizo <span class="highlight">Figma</span> para modelação base dependendo do nível de complexidade de cada projeto.</p>
+                    
+                <p>Além de linguagens de programação também sou fluente em Inglês! (rsrsrs)</p>
 
                 <div class="button-group">
                     <a href="#contact"><button>Entrar em contato</button></a>
@@ -109,5 +115,26 @@
         </div>
         </form>
     </section>
+
+    <section class="modal-tests">
+
+    </section>
+
+    <div id="navigation" class="nav non-visible mobile-only">
+        <ul>
+            <li onclick="checkMenu()"><a href="#about">Sobre mim</a></li>
+            <li onclick="checkMenu()"><a href="#project">Projetos</a></li>
+            <li onclick="checkMenu()"><a href="#contact">Contato</a></li>
+        </ul>
+        <a target="_blank" href="https://github.com/NotJotunnn"><button><i class="fa-brands fa-github"></i></button></a>
+    </div>
+
+    <div id="modal" class="modal">
+        <div onclick="toggleVisibility(modal)" class="modal-background"></div>
+        <div class="modal-content">
+            <div id="modalContent" class="modal-inner-content">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
