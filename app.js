@@ -102,6 +102,8 @@ const projectList = [
     }
 ];
 
+// Header related (mostly for mobile)
+
 function menuToggle() {
     if(nav.classList.contains('non-visible')) return nav.classList.remove('non-visible');
     nav.classList.add('non-visible');
