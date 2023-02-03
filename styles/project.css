@@ -22,16 +22,15 @@
 }
 
 .project-content > h2 {
-    font-size: 32px
+    font-size: 44px
 }
 
 .project-content h3 {
     font-size: 24px;
-    font-weight: normal;
 }
 
 .project-content hr {
-    width: 350px;
+    width: 450px;
     height: 5px;
 
     background-color: var(--accent);
@@ -83,7 +82,7 @@
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: calc(100% + 100px);
     height: 110%;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0), black);
@@ -129,7 +128,7 @@
     padding: 0px 15px;
 }
 
-.card-content button {
+.card-content a > button {
     display: flex;
 
     justify-content: center;
@@ -154,11 +153,13 @@
     justify-content: center;
     align-items: center;
 
+    gap: 15px;
+
     width: 100%;
     height: fit-content;
 }
 
-.card-content a {
+.card-buttons-group a, .card-buttons-group button {
     display: flex;
 
     justify-content: center;
@@ -355,6 +356,10 @@
 
     body, .card-group {
         height: 100%;
+    }
+
+    .project-content hr {
+        width: 10%;
     }
 
     .card-group {
