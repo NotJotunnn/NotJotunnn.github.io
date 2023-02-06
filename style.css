@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: black;
+}
+
+.experiences {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: max(65vh, 800px);
+
+    background-color: rgb(51, 51, 51);
+
+    position: relative;
+}
+
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 860px;
+    height: 100%;
+}
+
+.experiences-content h4 {
+    display: flex;
+
+    align-items: center;
+
+    font-size: 32px;
+
+    color: white;
+
+    z-index: 1;
+
+    margin-bottom: 35px;
+
+    background-color: rgb(51, 51, 51);
+
+    height: 45px;
+}
+
+.experiences-content::before {
+    content: '';
+
+    width: 5px;
+    height: 100%;
+
+    background-color: purple;
+
+    position: absolute;
+    left: 50%;
+}
+
+.experiences-content .container {
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    position: relative;
+}
+
+.experiences-content .container::after {
+    content: '';
+
+    --diameter: 32px;
+
+    width: var(--diameter);
+    height: var(--diameter);
+
+    background-color: rgb(51, 51, 51);
+
+    border: 5px solid purple;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 39%;
+    left: 47.8%;
+}
+
+.experiences-content .container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.experiences-content .container .card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ccc;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    gap: 5px;
+
+    width: 350px;
+}
+
+.experiences-content .container .card p:first-child {
+    margin-bottom: 10px;
+}
+
+.experiences-content .container .card * {
+    width: 100%;
+}
+
+.experiences-content .container:nth-child(odd) .description {
+    text-align: right;
+}
+
+.experiences-content .container .description {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    color: white;
+
+    width: 350px;
+}
+
+.experiences-content .container .description h5 {
+    font-size: 24px;
+}
+
+.experiences-content .container .description p:first-of-type {
+    color: purple;
+}
+
+@media (max-width: 800px) {
+    .experiences {
+        height: 1400px;
+
+        position: absolute;
+        top: 0;
+    }
+
+    .experiences-content::before {
+        content: '';
+        left: 3.5%;
+    }
+
+    .experiences-content {
+        gap: 55px;
+
+        height: fit-content;
+        width: 100%;
+    }
+
+    .experiences-content .container {
+        padding-left: 50px;
+
+        height: fit-content;
+    }
+
+    .experiences-content .container .description, .experiences-content .container .card {
+        width: 90%;
+    }
+
+    .experiences-content .container .description {
+        background-color: #ccc;
+
+        border-radius: 20px 20px 0px 0px;
+
+        padding: 20px 20px 0px;
+
+        color: black;
+    }
+
+    .experiences-content .container .card {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .experiences-content .container::after {
+        content: '';
+    
+        --diameter: 16px;
+    
+        width: var(--diameter);
+        height: var(--diameter);
+    
+        top: 39%;
+        left: 1%;
+    }
+
+    .experiences-content .container:nth-child(odd), .experiences-content .container {
+        flex-direction: column-reverse;
+    }
+
+    .experiences-content .container:nth-child(odd) .description {
+        text-align: left;
+    }
+}
