@@ -1,24 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-    width: 100%;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background-color: black;
-}
-
 .experiences {
     display: flex;
 
@@ -26,9 +5,9 @@ body {
     align-items: center;
 
     width: 100%;
-    height: max(65vh, 800px);
+    height: max(65vh, 1000px);
 
-    background-color: rgb(51, 51, 51);
+    background-color: var(--background);
 
     position: relative;
 }
@@ -44,7 +23,7 @@ body {
     height: 100%;
 }
 
-.experiences-content h4 {
+.experiences-content h2 {
     display: flex;
 
     align-items: center;
@@ -53,11 +32,29 @@ body {
 
     color: white;
 
+    margin-bottom:15px;
+
     z-index: 1;
+
+    background-color: var(--background);
+
+    height: 45px;
+}
+
+.experiences-content h3 {
+    display: flex;
+
+    align-items: center;
 
     margin-bottom: 35px;
 
-    background-color: rgb(51, 51, 51);
+    color: white;
+
+    text-align: center;
+
+    background-color: var(--background);
+
+    z-index: 1;
 
     height: 45px;
 }
@@ -68,7 +65,7 @@ body {
     width: 5px;
     height: 100%;
 
-    background-color: purple;
+    background-color: var(--accent);
 
     position: absolute;
     left: 50%;
@@ -92,9 +89,9 @@ body {
     width: var(--diameter);
     height: var(--diameter);
 
-    background-color: rgb(51, 51, 51);
+    background-color: var(--background);
 
-    border: 5px solid purple;
+    border: 5px solid var(--accent);
     border-radius: 50%;
 
     position: absolute;
@@ -132,6 +129,13 @@ body {
     width: 100%;
 }
 
+.experiences-content .container .card a > i {
+    width: fit-content;
+    margin-left: 5px;
+
+    color: var(--accent);
+}
+
 .experiences-content .container:nth-child(odd) .description {
     text-align: right;
 }
@@ -154,15 +158,12 @@ body {
 }
 
 .experiences-content .container .description p:first-of-type {
-    color: purple;
+    color: var(--accent);
 }
 
 @media (max-width: 800px) {
     .experiences {
-        height: 1400px;
-
-        position: absolute;
-        top: 0;
+        height: 1550px;
     }
 
     .experiences-content::before {
@@ -175,6 +176,10 @@ body {
 
         height: fit-content;
         width: 100%;
+    }
+
+    .experiences-content h3 {
+        width: 300px;
     }
 
     .experiences-content .container {
