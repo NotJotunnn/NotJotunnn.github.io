@@ -9,7 +9,7 @@ header {
 
     overflow-x: hidden;
 
-    position: sticky;
+    position: fixed;
     top: 0;
 
     background-color: var(--background);

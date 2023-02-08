@@ -9,6 +9,8 @@
     width: 100%;
     height: 60vh;
 
+    margin-top: 70px;
+
     overflow-x: hidden;
 
     background: url('../assets/projects/ilya-pavlov-unsplash-hero-background.jpg') no-repeat center;
