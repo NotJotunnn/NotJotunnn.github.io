@@ -112,11 +112,11 @@ header {
         gap: 15px;
 
         width: 100%;
-        height: 100%;
+        height: 100vh;
 
         background-color: var(--background);
 
-        position: absolute;
+        position: fixed;
 
         top: 0;
         left: 0;
