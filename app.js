@@ -1,4 +1,4 @@
-// const nav = document.getElementById('navigation');
+const nav = document.getElementById('navigation');
 // const body = document.querySelector('body');
 // const html = document.querySelector('html');
 
