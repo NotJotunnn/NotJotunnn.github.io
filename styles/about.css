@@ -22,6 +22,10 @@
     gap: 80px;
 }
 
+.about-content .col1 {
+    z-index: 2;
+}
+
 .about-content .col1 .img-background {
     background-color: var(--accent);
 
@@ -53,6 +57,8 @@
     width: 950px;
 
     color: aliceblue;
+
+    z-index: 1;
 }
 
 .about-content .col2 img {
@@ -84,6 +90,12 @@
     font-size: 24px;
 }
 
+.about-content .col2 .header-3 {
+    display: flex;
+
+    gap: 5px;
+}
+
 .about-content .col2 p {
     font-size: 18px;
     line-height: 24px;
@@ -106,6 +118,13 @@
     border-radius: 4px;
 
     font-size: 16px;
+}
+
+.animate > .emoji {
+    width: fit-content;
+    animation: salute 1s ease-in-out 1.5s 2;
+    
+    font-size: 24px;
 }
 
 @media (hover:hover) {

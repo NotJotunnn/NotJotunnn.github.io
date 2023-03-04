@@ -47,9 +47,9 @@
         <div class="hero-background"></div>
         <div class="hero-content">
             <div class="col1">
-                <h1>Olá! me chamo: <br><span class="name">Leandro Ferreira.</span><br>E sou um frontend developer!</h1>
+                <h1 class="hidden">Olá! me chamo: <br><span class="name">Leandro Ferreira.</span><br>E sou um frontend developer!</h1>
 
-                <div class="button-group">
+                <div class="button-group hidden">
                     <a href="#contact"><button>Entrar em contato</button></a>
                     <a target="_blank" href="./assets/Currículo.pdf" download><button>Baixar currículo</button></a>
                 </div>
@@ -64,16 +64,16 @@
     <section id="about" class="about">  
         <div class="about-content">
             <div class="col1">
-                <div class="img-background">
+                <div class="img-background hidden">
                     <img src="./assets/foto-minha.jpeg" alt="Eu!">
                 </div>
             </div>
 
-            <div class="col2">
+            <div class="col2 hidden">
                 <img class="mobile-only" src="./assets/me.jpg" alt="Foto minha!">
                 <h2>Sobre mim</h2>
                 <hr>
-                <h3>👋 Olá! Me chamo Leandro!</h3>
+                <div class="header-3 hidden"><h3 class="emoji">👋</h3><h3>Olá! Me chamo Leandro!</h3></div>
 
                 <p>Desde de meu <span class="highlight">ensino médio</span>, sempre tive muita conexão com a área de programação, seja conhecendo pessoas que praticavam ou consumindo diversos conteúdos do gênero, e hoje eu estou à procura de torna-lo <span class="highlight">real</span> passo a passo.</p>
 
@@ -92,14 +92,30 @@
     </section>
 
     <section id="project" class="project">
-        <div class="project-content">
-            <h2>Projetos</h2>
-            <h3>Veja alguns de meus projetos!</h3>
-            <hr>
-            <div id="gallery" class="card-group">
+            <div class="project-content">
+                <h2 class="hidden">Projetos</h2>
+                <h3 class="hidden">Este são alguns de meus melhores!</h3>
+                <hr class="hidden">
+                <div class="project-group">
+                    <div class="project-card hidden">
+                        <a href="#" class="project-card-link"></a>
+                        <h4>Project name 1</h4>
+                    </div>
+                    <div class="project-card hidden">
+                        <a href="#" class="project-card-link"></a>
+                        <h4>Project name 1</h4>
+                    </div>
+                    <div class="project-card hidden">
+                        <a href="#" class="project-card-link"></a>
+                        <h4>Project name 1</h4>
+                    </div>
+                    <div class="project-card hidden">
+                        <a href="#" class="project-card-link"></a>
+                        <h4>Project name 1</h4>
+                    </div>
+                </div>
+                <a href="https://github.com/NotJotunnn?tab=repositories" target="_blank"><button>Veja mais!</button></a>
             </div>
-            <a target="_blank" href="https://github.com/NotJotunnn?tab=repositories"><button><i class="fa-brands fa-github"></i>Veja mais!</button></a>
-        </div>
     </section>
 
     <section class="experiences">
@@ -171,7 +187,7 @@
         </ul>
         <a target="_blank" href="https://github.com/NotJotunnn"><button><i class="fa-brands fa-github"></i></button></a>
     </div>
-
+<!-- 
     <div class="modal desktop-only" id="modal">
         <div class="background">
             <button id="visualize" onclick="showPicture()" class="modal-container"><img src="https://picsum.photos/1080/300" alt="background"></button>
@@ -292,9 +308,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="background" onclick="toggleOffAllPoppup()" class="screen-background"></div>
+    <!-- <div id="background" onclick="toggleOffAllPoppup()" class="screen-background"></div>
     <div id="showPicture" class="picture-visualization">
         <div class="fake-header">
             <button onclick="resetZoom()" class="zoom-reset mobile-only">Voltar zoom</button>
@@ -304,6 +320,6 @@
         <picture id="magnifyingHover" class="picture-content">
             <img id="magnifyingImg" class="picture" src="https://picsum.photos/1080/1080" alt="project" style="transform: translate(-50%, -50%) scale(1);">
         </picture>
-    </div>
+    </div> -->
 </body>
 </html>

@@ -77,8 +77,39 @@ a * {
     text-decoration: underline;
 }
 
+button {
+    transition: background-color 300ms;
+}
+
 @media (max-width: 800px) {
     .mobile-only {
         display: block;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes salute {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
     }
 }
