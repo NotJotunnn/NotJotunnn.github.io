@@ -7,7 +7,7 @@
     align-items: center;
 
     width: 100%;
-    height: 60vh;
+    height: 82vh;
 
     margin-top: 70px;
 
@@ -41,7 +41,7 @@
 
     width: var(--width);
 
-    gap: 15px;
+    gap: 35px;
 
     z-index: 1;
 }
@@ -106,6 +106,8 @@
     outline: 4px solid var(--accent);
 
     box-shadow: 10px 10px 10px black;
+
+    width: min-content;
 }
 
 @media (hover:hover) {   
@@ -119,7 +121,7 @@
 
 @media (max-width: 800px) {
     .hero {
-        height: 800px;
+        height: 90vh;
     }
 
     .hero-content {

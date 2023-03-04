@@ -58,6 +58,8 @@ a * {
 
 .highlight {
     color: var(--accent);
+
+    font-weight: 600;
 }
 
 .italic {
@@ -106,7 +108,7 @@ button {
     }
 
     50% {
-        transform: rotate(90deg);
+        transform: rotate(70deg);
     }
 
     100% {
