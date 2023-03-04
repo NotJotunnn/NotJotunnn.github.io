@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O portfólio do Leandro para buscar por empregos">
+
+    <!-- LINKS -->
     <link rel="stylesheet" href="global.css">
     <link rel="shortcut icon" href="./assets/Logo.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/973f7fabdf.js" crossorigin="anonymous"></script>
@@ -13,7 +16,7 @@
 <body>
     <header>
         <div class="header-content">
-            <a rel="canonical" href="#hero">
+            <a aria-label="Logo do Leandro" rel="canonical" href="#hero">
                 <svg class="logo" width="449" height="207" viewBox="0 0 449 207" xmlns="http://www.w3.org/2000/svg">
                     <path d="M150.427 183.5C171.927 204 189.927 207 189.927 207C189.927 207 172.927 195 176.427 182C196.927 195 215.927 192 215.927 192C208.427 191.5 201.927 169 201.927 169C198.427 158.5 199.927 143 199.927 143C200.427 129.5 207.927 115 207.927 115C226.927 130.5 229.927 157 229.927 157C232.927 160.5 230.927 180 230.927 180C235.427 180.5 251.927 152 251.927 152C258.927 169.5 246.427 200.5 246.427 200.5C277.427 172 275.927 143 275.927 143C276.427 126.5 267.927 111 267.927 111C263.427 101 251.427 87.5 251.427 87.5C256.927 102 252.427 115 252.427 115C247.427 131 243.427 129.5 243.427 129.5C242.427 123 241.427 117.5 241.427 117.5C240.427 109.5 229.427 88.5 229.427 88.5C214.427 66 219.427 45.5 219.427 45.5C219.927 30 240.427 0 240.427 0L221.427 13.5C195.427 34 186.927 47 186.927 47C164.927 80.5 164.927 96.5 164.927 96.5C158.427 109 162.927 146 162.927 146C148.427 135.5 148.427 96.5 148.427 96.5C136.427 129.5 138.927 129.5 138.927 129.5C130.927 160 150.427 183.5 150.427 183.5Z"/>
                     <path d="M307.927 145C298.427 168 271.927 195 271.927 195C271.927 195 286.927 174.5 290.927 158.5C290.927 158.5 292.927 146.5 291.927 143.5C293.427 136.5 285.927 118.5 285.927 118.5C285.927 117.5 272.927 91.5 272.927 91.5C269.427 84 269.427 68 269.427 68C269.427 62 273.927 50 273.927 50C271.927 61.5 282.927 77.5 282.927 77.5C283.927 80 297.927 96.5 297.927 96.5C305.427 105 307.927 112.5 307.927 112.5C315.427 130.5 307.927 145 307.927 145Z" />
@@ -32,11 +35,11 @@
 
             <nav class="non-visible">
                 <ul>
-                    <li onclick="checkMenu()"><a rel="canonical" href="#about">Sobre mim</a></li>
-                    <li onclick="checkMenu()"><a rel="canonical" href="#project">Projetos</a></li>
-                    <li onclick="checkMenu()"><a rel="canonical" href="#contact">Contato</a></li>
+                    <li onclick="checkMenu()"><a aria-label="Saiba mais sobre mim" rel="canonical" href="#about">Sobre mim</a></li>
+                    <li onclick="checkMenu()"><a aria-label="Saiba mais sobre meus projetos" rel="canonical" href="#project">Projetos</a></li>
+                    <li onclick="checkMenu()"><a aria-label="Entre em contato" rel="canonical" href="#contact">Contato</a></li>
                 </ul>
-                <a target="_blank" rel="external" href="https://github.com/NotJotunnn"><button><i class="fa-brands fa-github"></i></button></a>
+                <a target="_blank" aria-label="Veja mais projetos" rel="external" href="https://github.com/NotJotunnn/Projects"><button><i class="fa-brands fa-github"></i></button></a>
             </nav>
 
             <button onclick="menuToggle()" class="menu mobile-only">
@@ -52,8 +55,8 @@
                 <h1 class="hidden">Olá! me chamo: <br><span class="name">Leandro Ferreira.</span><br>E sou um frontend developer!</h1>
 
                 <div class="button-group hidden">
-                    <a rel="canonical" href="#contact"><button>Entrar em contato</button></a>
-                    <a rel="canonical" target="_blank" href="./assets/Currículo.pdf" download><button>Baixar currículo</button></a>
+                    <a rel="canonical" aria-label="Entre em contato" href="#contact"><button>Entrar em contato</button></a>
+                    <a rel="canonical" aria-label="Veja mais sobre meu currículo" target="_blank" href="./assets/Currículo.pdf" download><button>Baixar currículo</button></a>
                 </div>
             </div>
 
@@ -101,8 +104,8 @@
                 <p>Além de linguagens de programação também sou fluente em Inglês! (rsrsrs)</p>
 
                 <div class="button-group">
-                    <a rel="canonical" href="#contact"><button>Entrar em contato</button></a>
-                    <a rel="canonical" target="_blank" href="./assets/Currículo.pdf" download><button>Baixar currículo</button></a>
+                    <a aria-label="Entre em contato" rel="canonical" href="#contact"><button>Entrar em contato</button></a>
+                    <a aria-label="Veja meu currículo" rel="canonical" target="_blank" href="./assets/Currículo.pdf" download><button>Baixar currículo</button></a>
                 </div>
             </div>
         </div>
@@ -115,23 +118,23 @@
                 <hr class="hidden">
                 <div class="project-group">
                     <div class="project-card hidden">
-                        <a rel="external" href="#" class="project-card-link"></a>
+                        <a aria-label="Projeto 1" rel="external" href="#" class="project-card-link"></a>
                         <h4>Project name 1</h4>
                     </div>
                     <div class="project-card hidden">
-                        <a rel="external" href="#" class="project-card-link"></a>
-                        <h4>Project name 1</h4>
+                        <a aria-label="Projeto 2" rel="external" href="#" class="project-card-link"></a>
+                        <h4>Project name 2</h4>
                     </div>
                     <div class="project-card hidden">
-                        <a rel="external" href="#" class="project-card-link"></a>
-                        <h4>Project name 1</h4>
+                        <a aria-label="Projeto 3" rel="external" href="#" class="project-card-link"></a>
+                        <h4>Project name 3</h4>
                     </div>
                     <div class="project-card hidden">
-                        <a rel="external" href="#" class="project-card-link"></a>
-                        <h4>Project name 1</h4>
+                        <a aria-label="Projeto 4" rel="external" href="#" class="project-card-link"></a>
+                        <h4>Project name 4</h4>
                     </div>
                 </div>
-                <a rel="external" href="https://github.com/NotJotunnn/Projects" target="_blank"><button>Veja mais!</button></a>
+                <a aria-label="Veja mais projetos" rel="external" href="https://github.com/NotJotunnn/Projects" target="_blank"><button>Veja mais!</button></a>
             </div>
     </section>
 
@@ -144,8 +147,8 @@
             <div class="container">
                 <div class="card">
                     <p>Sendo <span class="highlight">estagiário em TI</span>, trabalhei ao lado de <span class="highlight">servidores</span> e <span class="highlight">tercerizados</span> a fim de ajudar à todos e melhor facilitar a <span class="highlight">conclusão de suas tarefas</span>. Seja por alguma necessidade de <span class="highlight">Hardware</span>, à pesquisas relacionadas com <span class="highlight">Softwares</span>.</p>
-                    <p><a rel="canonical" class="link" href="./assets/experiences/inep/Relatório de Atividades.pdf" target="_blank" download>Relatório de Atividades<i class="fa-solid fa-file-arrow-down"></i></a></p>
-                    <p><a rel="canonical" class="link" href="./assets/experiences/inep/Relatório de Desempenho.pdf" target="_blank" download">Relatório de Desempenho<i class="fa-solid fa-file-arrow-down"></i></a></p>
+                    <p><a aria-label="Veja mais sobre essa experiência" rel="canonical" class="link" href="./assets/experiences/inep/Relatório de Atividades.pdf" target="_blank" download>Relatório de Atividades<i class="fa-solid fa-file-arrow-down"></i></a></p>
+                    <p><a aria-label="Veja mais sobre essa experiência" rel="canonical" class="link" href="./assets/experiences/inep/Relatório de Desempenho.pdf" target="_blank" download">Relatório de Desempenho<i class="fa-solid fa-file-arrow-down"></i></a></p>
                 </div>
 
                 <div class="description">
@@ -170,7 +173,7 @@
             <div class="container">
                 <div class="card">
                     <p>Trabalho como <span class="highlight">designer de posts, propostas e páginas de website</span> para melhor <span class="highlight">capturar</span> e <span class="highlight">reter</span> a atenção de possíveis clientes, e criar uma melhor <span class="highlight">presença digital</span> para a empresa, utilizando de conceitos de <span class="highlight">UI/UX</span>. Utilizo também ferramentas de designing <span class="highlight">Figma</span> ou <span class="highlight">Canva</span> para os trabalhos mais simples e replicáveis.</p>
-                    <p><a rel="external" class="link" target="_blank" href="https://www.instagram.com/churrascos_ferreira_df/?igshid=Zjc2ZTc4Nzk%3D">@churrascos_ferreira_df<i class="fa-solid fa-link"></i></a></p>
+                    <p><a aria-label="Veja mais sobre essa experiência" rel="external" class="link" target="_blank" href="https://www.instagram.com/churrascos_ferreira_df/?igshid=Zjc2ZTc4Nzk%3D">@churrascos_ferreira_df<i class="fa-solid fa-link"></i></a></p>
                 </div>
 
                 <div class="description">
@@ -187,8 +190,8 @@
             <div class="col1">
                 <h2>Gostou do que viu? <br>Entre em contato!</h2>
                 <div class="socials">
-                    <a rel="external" href="https://www.linkedin.com/in/leandro-ferreira-ab751b248/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
-                    <a rel="external" href="mailto:leandro.fcode@gmail.com" target="_blank"><button><i class="fa-solid fa-envelope"></i></button></a>
+                    <a aria-label="Veja mais sobre mim no Linkedin" rel="external" href="https://www.linkedin.com/in/leandro-ferreira-ab751b248/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                    <a aria-label="Me envie um e-mail" rel="external" href="mailto:leandro.fcode@gmail.com" target="_blank"><button><i class="fa-solid fa-envelope"></i></button></a>
                 </div>
             </div>
             <hr>
@@ -204,11 +207,11 @@
 
     <div id="navigation" class="nav non-visible mobile-only">
         <ul>
-            <li onclick="checkMenu()"><a rel="canonical" href="#about">Sobre mim</a></li>
-            <li onclick="checkMenu()"><a rel="canonical" href="#project">Projetos</a></li>
-            <li onclick="checkMenu()"><a rel="canonical" href="#contact">Contato</a></li>
+            <li onclick="checkMenu()"><a aria-label="Veja mais sobre mim" rel="canonical" href="#about">Sobre mim</a></li>
+            <li onclick="checkMenu()"><a aria-label="Veja mais projetos meus" rel="canonical" href="#project">Projetos</a></li>
+            <li onclick="checkMenu()"><a aria-label="Entre em contato" rel="canonical" href="#contact">Contato</a></li>
         </ul>
-        <a rel="external" target="_blank" href="https://github.com/NotJotunnn"><button><i class="fa-brands fa-github"></i></button></a>
+        <a aria-label="Veja mais projetos meus" rel="external" target="_blank" href="https://github.com/NotJotunnn"><button><i class="fa-brands fa-github"></i></button></a>
     </div>
 </body>
 </html>
