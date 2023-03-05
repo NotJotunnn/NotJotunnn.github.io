@@ -26,6 +26,12 @@
     --background: #1c1c1c;
 }
 
+html {
+    scroll-behavior: smooth;
+
+    scroll-padding: 20px 0px 0px 0px;
+}
+
 html, body {
     width: 100%;
     height: fit-content;
