@@ -162,6 +162,11 @@ header {
     }
 
     body > .nav a[target="_blank"] * {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
         outline: none;
     }
 

@@ -5,7 +5,9 @@
     align-items: center;
 
     width: 100%;
-    height: max(60vh, 800px);
+    height: fit-content;
+
+    padding-block: 50px;
 
     background-color: var(--background);
 }
@@ -157,10 +159,6 @@
 }
 
 @media (max-width: 800px) {
-    .about {
-        height: 1400px;
-    }
-    
     .about-content .col1 {
         display: none;
     }

@@ -5,7 +5,9 @@
     align-items: center;
 
     width: 100%;
-    height: max(65vh, 1000px);
+    height: fit-content;
+
+    padding-block: 50px;
 
     background-color: var(--background);
 
@@ -165,7 +167,8 @@
 
 @media (max-width: 800px) {
     .experiences {
-        height: 1550px;
+        height: fit-content;
+        padding-block: 50px;
     }
 
     .experiences-content::before {
@@ -217,7 +220,7 @@
         height: var(--diameter);
     
         top: 39%;
-        left: 1%;
+        left: 9px;
     }
 
     .experiences-content .container:nth-child(odd), .experiences-content .container {

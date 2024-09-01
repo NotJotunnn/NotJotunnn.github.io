@@ -5,7 +5,8 @@
     align-items: center;
 
     width: 100%;
-    height: max(20vh, 200px);
+
+    padding-block: 50px;
 
     background-color: var(--accent);
 }
@@ -42,8 +43,28 @@
     align-items: center;
 }
 
+.contact-content .socials div {
+    display: flex;
+
+    align-items: center;
+
+    height: 20px;
+}
+
 .contact-content .socials a {
     text-decoration: none;
+}
+
+.contact-content .socials a span {
+    font-size: 18px;
+
+    color: #ddd;
+
+    transition: color 200ms ease-in-out;
+}
+
+.contact-content .socials button:hover span {
+    color: #222;
 }
 
 .contact-content .socials button {
@@ -53,16 +74,16 @@
     cursor: pointer;
 }
 
-.contact-content .socials button:hover i {
-    color: #222;
-}
-
 .contact-content .socials i {
     color: #ddd;
 
     font-size: 24px;
 
-    transition: color 400ms ease-in-out;
+    transition: color 200ms ease-in-out;
+}
+
+.contact-content .socials button:hover i {
+    color: #222;
 }
 
 .contact-content hr {
@@ -145,10 +166,6 @@
 }
 
 @media (max-width: 800px) {
-    .contact {
-        height: 300px;
-    }
-    
     .contact-content {
         flex-direction: column;
     }
