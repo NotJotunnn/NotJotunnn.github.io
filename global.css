@@ -21,6 +21,8 @@
 
     --accent: #853ad0;
 
+    --accent2: #5a258e;
+
     --transparent-background: #1c1c1cd3;
 
     --background: #1c1c1c;
@@ -62,6 +64,11 @@ a * {
 
 .highlight {
     color: var(--accent);
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    color: transparent;
 
     font-weight: 600;
 }
