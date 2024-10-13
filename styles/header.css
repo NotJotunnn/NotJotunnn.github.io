@@ -62,11 +62,32 @@ header {
     border: none;
     outline: 3px solid var(--accent);
 
+    width: 24px;
+    height: 24px;
+
+    border-radius: 20px;
+}
+
+.header-content nav > a:last-child button {
+    background-color: var(--accent);
+
+    border: none;
+    outline: 3px solid var(--accent);
+
+    width: 24px;
+    height: 24px;
+
     border-radius: 20px;
 }
 
 .header-content nav > a button > i {
     font-size: 24px;
+
+    color: var(--background);
+}
+
+.header-content nav > a:last-child button > i {
+    font-size: 16px;
 
     color: var(--background);
 }
@@ -138,6 +159,12 @@ header {
         gap: 15px;
         
         list-style: none;
+    }
+
+    body > .nav .socials {
+        display: flex;
+
+        gap: 10px;
     }
 
     .header-content .menu, .header-content .logo {
