@@ -11,13 +11,13 @@ const projectList = [
         objective: 'Melhor facilitar o <span class="italic">workflow</span> pelo terminal'
     },
     {
-        name: 'Quizzical',
-        description: `Este foi um dos mais maravilhosos projetos que eu já fiz! ele utiliza dados da Trivia API! E então limpa (Já que a API ainda usa JQuery) e aplica neste casual mas divertido pequeno jogo!`,
-        links: ['https://github.com/NotJotunnn/Games/tree/main/Quizzical'],
-        fullimg: 'https://github.com/NotJotunnn/Games/blob/main/Quizzical/github/quizzical3.jpeg?raw=true',
-        tools: 'REACT, NODEJS, HTML5, CSS3',
-        client: 'Fictício',
-        objective: 'Criar um jogo simples'
+        name: 'Lokinho Skins',
+        description: `Site de rifas feito em ~3 meses, site que conta com diversas integrações além de um sistema de roleta e sorteador de números, autênticação e processamento de pagamento.`,
+        links: ['https://github.com/NotJotunnn/creditos/blob/main/lokinhoRifas/creditos.md'],
+        fullimg: 'https://github.com/NotJotunnn/creditos/blob/main/lokinhoRifas/github/lokinhorifas.png?raw=true',
+        tools: 'REACT, NODEJS, NEXTJS, FIGMA',
+        client: 'Lokinho Skins',
+        objective: 'Criar à partir de um design base, um site de rifas interativo'
     },
     {
         name: 'Gerador de senhas (app)',
@@ -29,13 +29,13 @@ const projectList = [
         objective: 'Criar um método de geração de senhas decentralizado e pessoal!'
     },
     {
-        name: 'Lista de afazeres! (webapp)',
-        description: `Este foi um dos primeiros aplicativos de web feitos por mim!<br><br>Este utiliza uma API local rudimentar para inserir novos dados à lista, ou remover antigos! E também tem um nome chato de se escrever!`,
-        links: ['https://github.com/NotJotunnn/Projects/tree/main/tasks'],
-        fullimg: 'https://github.com/NotJotunnn/Projects/blob/main/tasks/github/task1.jpeg?raw=true',
-        tools: 'NODEJS, API, JAVASCRIPT, HTML5, CSS3',
-        client: 'Fictício',
-        objective: 'Facilitar à partir da comunicação local entre servidor e cliente o simples armazenamento de dados (tarefas) e sua constância.'
+        name: 'Website Portfólio',
+        description: `Este projeto esta sendo feito no decorrer de minha carreira!<br><br>É um trabalho com muito esforço e paixão.`,
+        links: ['https://github.com/NotJotunnn/NotJotunnn.github.io'],
+        fullimg: 'https://github.com/NotJotunnn/NotJotunnn.github.io/blob/main/github/portfolio.png?raw=true',
+        tools: 'JAVASCRIPT, HTML5, CSS3, FONTAWESOME SDK, FIGMA',
+        client: 'A mim mesmo',
+        objective: 'Apresentar todos os meus projetos desenvolvidos ao longo do tempo.'
     }
 ];
 

@@ -102,6 +102,12 @@ hr {
     left: 0;
 
     cursor: pointer;
+
+    transition: scale 800ms ease-in-out;
+}
+
+.project-card:hover a {
+    scale: 1.1;
 }
 
 .project-card h4 {
