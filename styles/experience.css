@@ -173,7 +173,7 @@
 
     .experiences-content::before {
         content: '';
-        left: 3.5%;
+        left: 20px;
     }
 
     .experiences-content {
@@ -185,6 +185,7 @@
 
     .experiences-content h3 {
         width: 300px;
+        padding-top: 20px;
     }
 
     .experiences-content .container {
@@ -220,7 +221,7 @@
         height: var(--diameter);
     
         top: 39%;
-        left: 9px;
+        left: 10px;
     }
 
     .experiences-content .container:nth-child(odd), .experiences-content .container {
