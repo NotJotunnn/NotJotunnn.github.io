@@ -29,6 +29,10 @@
   <img src="./github/portfolio.png" width="100%">
 </p>
 
+## Demonstração
+
+[Portfólio](https://notjotunnn.github.io/)
+
 ## Descrição
 
 Este projeto esta sendo feito no decorrer de minha carreira!
@@ -40,6 +44,10 @@ Este projeto esta sendo feito no decorrer de minha carreira!
     2. Configurações atributos do DOM pelo Javascript
     3. Hosteamento pelo Github Pages
     4. Estilização
+
+## Demo
+
+[Portfolio](https://notjotunnn.github.io/)
 
 ## Description
 
