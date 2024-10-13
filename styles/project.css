@@ -38,6 +38,8 @@
 
 .project h3 {
     font-size: 24px;
+    font-weight: 500;
+    
     padding: 0px 25px;
 
     text-align: center;
@@ -94,6 +96,8 @@ hr {
 }
 
 .project-card a {
+    display: block;
+
     width: 100%;
     height: 100%;
 
@@ -104,6 +108,15 @@ hr {
     cursor: pointer;
 
     transition: scale 800ms ease-in-out;
+}
+
+.project-card img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 .project-card:hover a {

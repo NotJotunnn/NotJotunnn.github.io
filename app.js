@@ -61,7 +61,9 @@ function loadProjects() {
 
     projectElems.forEach((entry, index) => {
         entry.innerHTML = `
-            <a rel="external" href="${projectList[index].links[0]}" target="_blank" class="project-card-link" style="background-image: url('${projectList[index].fullimg}'); background-size: cover;background-position: center; ${index == 1 ? 'transform: scale(1.25);' : index == 3 ? 'transform: scale(1.55); background-position: bottom; top: -10px;' : ''}"></a>
+            <a rel="external" href="${projectList[index].links[0]}" target="_blank" class="project-card-link">
+                <img src="${projectList[index].fullimg}" alt="Imagem de ${projectList[index].name}"/>
+            </a>
             <h4>${projectList[index].name}</h4>`
     });
 }
