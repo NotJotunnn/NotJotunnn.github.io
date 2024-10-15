@@ -105,9 +105,11 @@ hr {
     top: 0;
     left: 0;
 
+    filter: brightness(50%);
+
     cursor: pointer;
 
-    transition: scale 800ms ease-in-out;
+    transition: scale 800ms ease-in-out, filter 800ms ease-in-out;
 }
 
 .project-card img {
@@ -121,6 +123,8 @@ hr {
 
 .project-card:hover a {
     scale: 1.1;
+
+    filter: brightness(100%);
 }
 
 .project-card h4 {
@@ -254,6 +258,10 @@ hr {
 
         font-size: 24px;
         filter: blur(0);
+    }
+
+    .project-card a {
+        filter: brightness(100%);
     }
 
     .project-card::after {

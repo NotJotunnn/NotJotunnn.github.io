@@ -83,6 +83,14 @@
     position: relative;
 }
 
+.experiences-content .container details > *:not(:is(summary)) {
+    padding-left: 15px;
+}
+
+.experiences-content .container details:not(:is(:first-child)) {
+    margin-top: 10px;
+}
+
 .experiences-content .container::after {
     content: '';
 

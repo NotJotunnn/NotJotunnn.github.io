@@ -62,6 +62,14 @@ a * {
     color: var(--background);
 }
 
+summary {
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-bottom: 5px;
+}
+
 .highlight {
     color: var(--accent);
     /* background: linear-gradient(90deg, var(--accent2), var(--accent), var(--accent2));
