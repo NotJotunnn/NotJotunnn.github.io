@@ -60,6 +60,7 @@
     z-index: 1;
 }
 
+/* Mobile */
 .about-content .col2 img {
     border-radius: 50%;
 
@@ -73,6 +74,7 @@
 
     object-fit: cover;
 }
+/* Mobile */
 
 .about-content .col2 h2 {
     font-size: 44px;
